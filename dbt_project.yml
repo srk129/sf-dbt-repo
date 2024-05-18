@@ -1,0 +1,2 @@
+name : "dbt_shreya_first_project"
+model-paths : ["models"]
