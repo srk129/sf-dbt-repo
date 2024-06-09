@@ -1,0 +1,19 @@
+sources:
+  - name: "shreya's sources"
+    database: DE_ECOMM
+    schema: SC_ECOMM
+    tables:
+      - name: USERS
+      - name: RAW_USERS
+      - name: RAW_COUNTRY
+      - name: RAW_SALES_1
+      - name: RAW_PRODUCT_SHIP
+      - name: CURR_CONV
+
+models:
+  - name: 'shreya'
+    config:
+      materialized: 'table'
+  - name: 'src_users'
+    config:
+      materialized: 'table'
