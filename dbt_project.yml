@@ -1,2 +1,7 @@
 name : "dbt_shreya_first_project"
 model-paths : ["models"]
+seed-paths: ["seeds"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+models:
+  materialized: 'table'

@@ -1,0 +1,1 @@
+SELECT * FROM {{source("shreya's sources","USERS")}}

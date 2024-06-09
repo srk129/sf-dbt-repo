@@ -1,0 +1,6 @@
+seeds:
+  - name: country_codes
+    config: 
+      full_refresh: true
+      column_types:
+        CountryCode: varchar(5)
