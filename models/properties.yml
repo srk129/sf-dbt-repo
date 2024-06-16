@@ -9,6 +9,8 @@ sources:
       - name: RAW_SALES_1
       - name: RAW_PRODUCT_SHIP
       - name: CURR_CONV
+      - name: HOTEL_DETAILS
+      - name : TEST_SALES_TAB_2
 
 models:
   - name: 'shreya'
@@ -17,3 +19,13 @@ models:
   - name: 'src_users'
     config:
       materialized: 'table'
+  - name: 'test_sales'
+    columns:
+      - name: ID
+        tests:
+          - not_null
+          - unique
+      - name: Approved
+        tests:
+          - accepted_values:
+              values: ['Yes','No']
